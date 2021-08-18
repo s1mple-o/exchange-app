@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "81908413",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "81908414",
+      "name": "兑换",
+      "font_class": "duihuan",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "81908415",
+      "name": "trending-3 行情",
+      "font_class": "trending-hangqing",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "81908416",
+      "name": "物资申购",
+      "font_class": "ziyuan213",
+      "unicode": "e728",
+      "unicode_decimal": 59176
+    }
+  ]
+}

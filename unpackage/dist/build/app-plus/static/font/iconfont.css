@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1626499460534') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghu:before {
+  content: "\e720";
+}
+
+.icon-duihuan:before {
+  content: "\e64e";
+}
+
+.icon-trending-hangqing:before {
+  content: "\e6f7";
+}
+
+.icon-ziyuan213:before {
+  content: "\e728";
+}
+
