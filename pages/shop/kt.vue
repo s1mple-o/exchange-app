@@ -277,7 +277,6 @@
 							access_token: _self.userInfo.access_token,
 						},
 						success: function(res) {
-							
 							// _self.typeListTwo[1].text = '已空投'+'('+ res.data.count+')'
 							if (res.data.ret == 200) {
 								_self.listTwo = res.data.data;
@@ -305,7 +304,7 @@
 							access_token: _self.userInfo.access_token,
 						},
 						success: function(res) {
-							console
+							// console.log(res)
 							_self.nowCount =  res.data.data.count;
 							_self.totalPagesT = res.data.data.count/20;
 							_self.totalPages = res.data.data.count/20;
@@ -322,7 +321,7 @@
 							access_token: _self.userInfo.access_token,
 						},
 						success: function(res) {
-
+							
 							if (res.data.ret == 200) {
 								_self.list = res.data.data;
 								for (var i = 0; i < 20; i++) {
@@ -682,12 +681,14 @@
 			randomClick() {
 				var _self = this;
 				let address_list = [];
+				let moble_List = [];
 				// console.log(_self.userInfo.access_token)
 				_self.checkedAllList.forEach((item, index) => {
 					// console.log(_self.list[index].wallet_address,item)
-
 					if (item) {
+						moble_List.push(_self.list[index].username)
 						address_list.push(_self.list[index].wallet_address)
+						
 					}
 
 				})
@@ -701,7 +702,8 @@
 						end:_self.rEnd,
 						random: true,
 						access_token: _self.userInfo.access_token,
-						address_list:address_list
+						address_list:address_list,
+						mobile_list:moble_List
 					},
 					success:function(res){
 						if(res.data.ret==200){
@@ -723,11 +725,14 @@
 			cirClick() {
 				var _self = this;
 				let address_list = [];
+				let moble_List = [];
 				_self.checkedAllList.forEach((item, index) => {
 			
 					if (item) {
+						moble_List.push(_self.list[index].username)
 						address_list.push(_self.list[index].wallet_address)
 					}
+					
 			
 				})
 				uni.request({
@@ -740,7 +745,8 @@
 						// end:_self.rEnd,
 						random: false,
 						access_token: _self.userInfo.access_token,
-						address_list:address_list
+						address_list:address_list,
+						mobile_list:moble_List
 					},
 					success:function(res){
 						if(res.data.ret==200){
